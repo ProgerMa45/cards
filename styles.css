@@ -1,5 +1,3 @@
-/* Если у тебя есть лицензированный Proxima Nova,
-   подключи его здесь через @font-face. */
 
 * {
   box-sizing: border-box;
@@ -38,7 +36,6 @@ button:focus-visible {
   margin-inline: auto;
 }
 
-/* ===== Подкаст: 1300 × 545 ===== */
 
 .episode {
   display: grid;
@@ -132,7 +129,6 @@ button:focus-visible {
   line-height: 27px;
 }
 
-/* ===== Нижний ряд ===== */
 
 .cards {
   display: flex;
@@ -142,7 +138,6 @@ button:focus-visible {
   margin-top: 221px;
 }
 
-/* ===== Картина: 290 × 514 ===== */
 
 .art {
   flex: 0 0 290px;
@@ -197,7 +192,6 @@ button:focus-visible {
   line-height: 21px;
 }
 
-/* ===== Десерт: 380 × 582 ===== */
 
 .dessert {
   flex: 0 0 380px;
@@ -215,7 +209,6 @@ button:focus-visible {
 .dessert__content {
   min-height: 337px;
   padding: 50px 44px;
-  /* Внутренняя обводка не меняет отступы. */
   box-shadow: inset 0 0 0 1px #f2f6fa;
 }
 
@@ -255,7 +248,6 @@ button:focus-visible {
   line-height: 28px;
 }
 
-/* ===== About Me: 330 × 400 ===== */
 
 .about {
   position: relative;
@@ -317,7 +309,6 @@ button:focus-visible {
   line-height: 21px;
 }
 
-/* Адаптация для узких экранов — дополнение к макету. */
 
 @media (max-width: 1250px) {
   .episode {
