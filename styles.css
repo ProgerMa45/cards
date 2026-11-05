@@ -1,0 +1,416 @@
+/* Если у тебя есть лицензированный Proxima Nova,
+   подключи его здесь через @font-face. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 24px;
+  background: #191919;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 3px solid #118da8;
+  outline-offset: 4px;
+}
+
+.homework {
+  width: 100%;
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+/* ===== Подкаст: 1300 × 545 ===== */
+
+.episode {
+  display: grid;
+  grid-template-columns: 389px minmax(0, 1fr);
+  gap: 53px;
+  padding: 40px;
+  border-radius: 32px;
+  background: #000;
+  color: #fff;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-optical-sizing: none;
+}
+
+.episode__image {
+  width: 389px;
+  height: 465px;
+  object-fit: cover;
+}
+
+.episode__content {
+  position: relative;
+  min-width: 0;
+  height: 465px;
+}
+
+.episode__tag {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 73px;
+  height: 27px;
+  border-radius: 6px;
+  background: #191919;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.episode__number {
+  position: absolute;
+  top: 83px;
+  left: 0;
+  display: flex;
+  gap: 5px;
+  color: #118da8;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.episode__number span {
+  font-size: 18px;
+}
+
+.episode__title {
+  position: absolute;
+  top: 128px;
+  left: 0;
+  width: 100%;
+  max-width: 701px;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 2.56px;
+}
+
+.episode__description {
+  position: absolute;
+  top: 297px;
+  left: 0;
+  width: 100%;
+  max-width: 757px;
+  color: rgb(255 255 255 / 70%);
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.episode__button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 208px;
+  height: 51px;
+  border: 0;
+  border-radius: 6px;
+  background: #118da8;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* ===== Нижний ряд ===== */
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-top: 221px;
+}
+
+/* ===== Картина: 290 × 514 ===== */
+
+.art {
+  flex: 0 0 290px;
+  padding: 20px 20px 30px;
+  background: #e1ede6;
+  color: #2c2d35;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.art__image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.art__author {
+  margin-top: 15px;
+  color: #86928b;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.art__title {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.art__materials {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.art__price {
+  margin-top: 30px;
+  color: #598d66;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.art__button {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border: 1px solid #598d66;
+  background: transparent;
+  color: #598d66;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* ===== Десерт: 380 × 582 ===== */
+
+.dessert {
+  flex: 0 0 380px;
+  background: #fff;
+  color: #2e363e;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.dessert__image {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+}
+
+.dessert__content {
+  min-height: 337px;
+  padding: 50px 44px;
+  /* Внутренняя обводка не меняет отступы. */
+  box-shadow: inset 0 0 0 1px #f2f6fa;
+}
+
+.dessert__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.dessert__description {
+  max-width: 240px;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.dessert__price {
+  margin-top: 24px;
+  color: #434b53;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.dessert__button {
+  display: block;
+  width: 163px;
+  height: 68px;
+  margin-top: 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #fed84c;
+  color: #2e363e;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* ===== About Me: 330 × 400 ===== */
+
+.about {
+  position: relative;
+  flex: 0 0 330px;
+  min-height: 400px;
+  padding: 22px 27px 40px;
+  background: #0c0b15;
+  color: #809fb8;
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.about__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #06152b;
+}
+
+.about__menu {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 38px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+}
+
+.about__menu span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #99b2c6;
+}
+
+.about__title {
+  margin-top: 18px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.about__role {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.about__description {
+  max-width: 260px;
+  margin-top: 27px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* Адаптация для узких экранов — дополнение к макету. */
+
+@media (max-width: 1250px) {
+  .episode {
+    grid-template-columns: minmax(250px, 1fr) 1.6fr;
+    gap: 32px;
+  }
+
+  .episode__image {
+    width: 100%;
+    height: 100%;
+    min-height: 465px;
+  }
+
+  .episode__content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .episode__content > * {
+    position: static;
+  }
+
+  .episode__number {
+    margin-top: 32px;
+  }
+
+  .episode__title {
+    margin-top: 18px;
+    font-size: 48px;
+  }
+
+  .episode__description {
+    margin-top: 28px;
+  }
+
+  .episode__button {
+    flex-shrink: 0;
+    margin-top: 18px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 20px 16px;
+  }
+
+  .episode {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .episode__image {
+    height: 320px;
+    min-height: 0;
+  }
+
+  .episode__title {
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+
+  .episode__description {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .cards {
+    gap: 32px;
+    margin-top: 48px;
+  }
+
+  .art,
+  .dessert,
+  .about {
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .art__image {
+    width: 100%;
+  }
+
+  .dessert__content {
+    padding: 36px 24px;
+  }
+}
